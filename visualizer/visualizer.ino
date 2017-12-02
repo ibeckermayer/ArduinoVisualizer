@@ -3,11 +3,11 @@ int sensorValue = 0; // variable to store the value coming from the sensor
 
 
 void setup() {
-  Serial.begin (9600);
+  Serial.begin(9600);
 
 }
 
 void loop() {
-  sensorValue = digitalRead (sensorPin);
-  Serial.print(sensorValue);
+  sensorValue = analogRead(sensorPin);
+  Serial.println(sensorValue);
 }

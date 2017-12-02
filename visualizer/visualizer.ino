@@ -8,6 +8,6 @@ void setup() {
 }
 
 void loop() {
-  sensorValue = analogRead (sensorPin);
+  sensorValue = digitalRead (sensorPin);
   Serial.print(sensorValue);
 }
